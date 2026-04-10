@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Bakes By Blunch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sl-dark': '#2c241b',
+                        'sl-earth': '#f9f8f6',
+                        'sl-clay': '#bd6a42',
+                        'sl-green': '#586c38',
+                        'sl-border': '#eae5d9'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-sl-earth text-sl-dark antialiased selection:bg-sl-clay selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 nav-solid transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"
+                        class="font-serif text-2xl tracking-widest text-sl-dark uppercase flex items-center gap-2">
+                        BBB
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
+                    <a href="index.html" class="text-gray-600 hover:text-sl-clay text-sm uppercase tracking-wider font-medium transition-colors">Home</a>
+                    <a href="menu.html" class="text-sl-clay border-b-2 border-sl-clay pb-1 text-sm uppercase tracking-wider font-medium transition-colors">Menu</a>
+                    <a href="about.html" class="text-gray-600 hover:text-sl-clay text-sm uppercase tracking-wider font-medium transition-colors">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-sl-clay text-sm uppercase tracking-wider font-medium transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-sl-dark hover:text-sl-clay focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-sl-border shadow-md">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-3 py-3 text-gray-600 hover:text-sl-clay transition-colors uppercase tracking-wider">Home</a>
+                <a href="menu.html" class="block px-3 py-3 text-sl-clay font-medium uppercase tracking-wider">Menu</a>
+                <a href="about.html" class="block px-3 py-3 text-gray-600 hover:text-sl-clay transition-colors uppercase tracking-wider">About</a>
+                <a href="contact.html" class="block px-3 py-3 text-gray-600 hover:text-sl-clay transition-colors uppercase tracking-wider">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-white border-b border-sl-border text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.03] bg-[url('assets/images/love_cake_1775804298710.png')] bg-cover bg-center grayscale"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 fade-up">
+            <h1 class="text-4xl md:text-5xl font-serif text-sl-dark mb-4">Our Menu</h1>
+            <div class="h-px w-16 bg-sl-clay mx-auto mb-6"></div>
+            <p class="text-gray-500 max-w-2xl mx-auto text-sm tracking-wide">Professional, clean, and authentically baked.</p>
+        </div>
+    </header>
+
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- CELEBRATION CAKES -->
+        <div class="mb-20" id="wedding">
+            <div class="flex items-center justify-center mb-10 fade-up">
+                <h2 class="text-2xl font-serif text-sl-dark tracking-wide">Celebration Cakes</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-up">
+                <!-- Wedding Cake -->
+                <div class="bg-white rounded overflow-hidden shadow-sm border border-sl-border flex flex-col group">
+                    <div class="img-container h-64 border-b border-sl-border">
+                        <img src="assets/images/wedding_cake_new_1775804389007.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl text-sl-dark font-serif mb-2 group-hover:text-sl-clay transition-colors">Elegant Wedding</h3>
+                        <p class="text-gray-500 text-sm mb-6 flex-grow">A majestic buttercream multi-tier floral cake. Pure artistry designed for unforgettable days.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-sl-border">
+                            <span class="text-sl-dark font-medium text-sm">LKR 5000</span>
+                            <span class="text-sl-clay uppercase text-[10px] tracking-widest font-bold">Pre-Order Only</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Birthday Cake -->
+                <div class="bg-white rounded overflow-hidden shadow-sm border border-sl-border flex flex-col group">
+                    <div class="img-container h-64 border-b border-sl-border">
+                        <img src="assets/images/birthday_cake_new_1775804403991.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl text-sl-dark font-serif mb-2 group-hover:text-sl-clay transition-colors">Signature Birthday</h3>
+                        <p class="text-gray-500 text-sm mb-6 flex-grow">Fun macaron-topped drip cake with rich layers and smooth, clean frosting.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-sl-border">
+                            <span class="text-sl-dark font-medium text-sm">LKR 3500</span>
+                            <a href="contact.html" class="text-xs text-sl-clay hover:text-sl-dark uppercase font-medium tracking-wide">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Christmas Cake -->
+                <div class="bg-white rounded overflow-hidden shadow-sm border border-sl-border flex flex-col group">
+                    <div class="img-container h-64 border-b border-sl-border">
+                        <img src="assets/images/christmas_cake_1775804367587.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl text-sl-dark font-serif mb-2 group-hover:text-sl-clay transition-colors">Classic Christmas</h3>
+                        <p class="text-gray-500 text-sm mb-6 flex-grow">Rich, matured, and nut-filled fruit cake glazed to festive perfection with deep spices.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-sl-border">
+                            <span class="text-sl-dark font-medium text-sm">LKR 4500</span>
+                            <span class="text-sl-clay uppercase text-[10px] tracking-widest font-bold">Pre-Order Only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CLASSIC BAKES -->
+        <div class="mb-20" id="classic">
+            <div class="flex items-center justify-center mb-10 fade-up">
+                <h2 class="text-2xl font-serif text-sl-dark tracking-wide">Classic Bakes</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 fade-up">
+                
+                <!-- Chocolate Cake -->
+                <div class="bg-white p-5 rounded border border-sl-border shadow-sm flex flex-col">
+                    <div class="img-container h-48 mb-4 rounded overflow-hidden">
+                        <img src="assets/images/chocolate_cake_1775804313028.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg text-sl-dark font-serif mb-1">Chocolate Divine</h3>
+                    <p class="text-gray-500 text-xs mb-4 flex-grow">Deep, rich cocoa layers topped with velvety frosting.</p>
+                    <div class="mt-auto border-t border-sl-border pt-3">
+                        <span class="text-sl-dark font-medium text-sm block">LKR 2500</span>
+                    </div>
+                </div>
+
+                <!-- Butter Cake -->
+                <div class="bg-white p-5 rounded border border-sl-border shadow-sm flex flex-col">
+                    <div class="img-container h-48 mb-4 rounded overflow-hidden">
+                        <img src="assets/images/butter_cake_1775804269391.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg text-sl-dark font-serif mb-1">Heritage Butter</h3>
+                    <p class="text-gray-500 text-xs mb-4 flex-grow">A Sri Lankan favorite, melting-soft buttery crumb.</p>
+                    <div class="mt-auto border-t border-sl-border pt-3">
+                        <span class="text-sl-dark font-medium text-sm block">LKR 1800</span>
+                    </div>
+                </div>
+
+                <!-- Date Cake -->
+                <div class="bg-white p-5 rounded border border-sl-border shadow-sm flex flex-col">
+                    <div class="img-container h-48 mb-4 rounded overflow-hidden">
+                        <img src="assets/images/date_cake_1775804284292.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg text-sl-dark font-serif mb-1">Sticky Toffee Date</h3>
+                    <p class="text-gray-500 text-xs mb-4 flex-grow">Luscious warm date sponge soaked in homemade toffee.</p>
+                    <div class="mt-auto border-t border-sl-border pt-3">
+                        <span class="text-sl-dark font-medium text-sm block">LKR 2200</span>
+                    </div>
+                </div>
+
+                <!-- Love Cake -->
+                <div class="bg-white p-5 rounded border border-sl-border shadow-sm flex flex-col">
+                    <div class="img-container h-48 mb-4 rounded overflow-hidden">
+                        <img src="assets/images/love_cake_1775804298710.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg text-sl-dark font-serif mb-1">Classic Love Cake</h3>
+                    <p class="text-gray-500 text-xs mb-4 flex-grow">Spiced semolina and roasted cashew cake, square cut.</p>
+                    <div class="mt-auto border-t border-sl-border pt-3">
+                        <span class="text-sl-dark font-medium text-sm block">LKR 3000 (Per KG)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BREAKFAST & BRUNCH -->
+        <div id="breakfast">
+            <div class="flex items-center justify-center mb-10 fade-up">
+                <h2 class="text-2xl font-serif text-sl-dark tracking-wide">Breakfast & Brunch</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-up">
+                <!-- Pancakes -->
+                <div class="flex flex-row bg-white rounded border border-sl-border shadow-sm items-center h-40">
+                    <div class="w-2/5 h-full img-container border-r border-sl-border">
+                        <img src="assets/images/pancakes_1775804334619.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-3/5 p-5">
+                        <h3 class="text-lg text-sl-dark font-serif mb-1">Cloud Pancakes</h3>
+                        <p class="text-gray-500 text-xs mb-3">Giant stack drizzled with pure syrup and butter.</p>
+                        <span class="text-sl-dark font-medium text-sm">LKR 1800</span>
+                    </div>
+                </div>
+                <!-- Waffles -->
+                <div class="flex flex-row bg-white rounded border border-sl-border shadow-sm items-center h-40">
+                    <div class="w-2/5 h-full img-container border-r border-sl-border">
+                        <img src="assets/images/waffles_1775804351344.png" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-3/5 p-5">
+                        <h3 class="text-lg text-sl-dark font-serif mb-1">Golden Waffles</h3>
+                        <p class="text-gray-500 text-xs mb-3">Crispy perfection paired with authentic Kithul treacle.</p>
+                        <span class="text-sl-dark font-medium text-sm">LKR 2000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sl-dark pt-12 pb-6 border-t-[6px] border-sl-clay text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h3 class="font-serif text-xl text-white tracking-widest uppercase mb-4">BBB</h3>
+            <p class="text-gray-500 text-xs uppercase tracking-wider">&copy; 2026 Bakes By Blunch. Kandy, Sri Lanka.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+
+</html>

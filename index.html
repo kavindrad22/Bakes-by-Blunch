@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakes By Blunch | Premium Sri Lankan Bakery</title>
+    <meta name="description"
+        content="Experience the finest artisanal baking crafted with authentic Ceylon ingredients. Bakes By Blunch offers simple, professional, and elegant cakes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sl-dark': '#2c241b', /* Deep coffee brown */
+                        'sl-earth': '#f9f8f6', /* Light plaster / warm white */
+                        'sl-clay': '#bd6a42', /* Cinnamon / terracotta */
+                        'sl-green': '#586c38', /* Tea green */
+                        'sl-border': '#eae5d9' /* Soft border */
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-sl-earth text-sl-dark antialiased selection:bg-sl-clay selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 nav-solid transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html"
+                        class="font-serif text-2xl tracking-widest text-sl-dark uppercase flex items-center gap-2">
+                        BBB <span class="text-sm font-sans tracking-normal text-gray-500 capitalize hidden sm:inline border-l border-gray-300 pl-3 ml-2">Bakes By Blunch</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 lg:space-x-10">
+                    <a href="index.html"
+                        class="text-sl-clay border-b-2 border-sl-clay pb-1 text-sm uppercase tracking-wider font-medium transition-colors">Home</a>
+                    <a href="menu.html"
+                        class="text-gray-600 hover:text-sl-clay text-sm uppercase tracking-wider font-medium transition-colors">Menu</a>
+                    <a href="about.html"
+                        class="text-gray-600 hover:text-sl-clay text-sm uppercase tracking-wider font-medium transition-colors">About</a>
+                    <a href="contact.html"
+                        class="text-gray-600 hover:text-sl-clay text-sm uppercase tracking-wider font-medium transition-colors">Contact</a>
+                    <a href="menu.html"
+                        class="btn-primary bg-sl-dark text-white px-6 py-2.5 rounded text-xs uppercase tracking-wider font-medium hover:bg-sl-clay transition-colors flex items-center gap-2">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-sl-dark hover:text-sl-clay focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-sl-border shadow-md">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html"
+                    class="block px-3 py-3 text-sl-clay font-medium uppercase tracking-wider">Home</a>
+                <a href="menu.html"
+                    class="block px-3 py-3 text-gray-600 hover:text-sl-clay hover:bg-slate-50 transition-colors uppercase tracking-wider">Menu</a>
+                <a href="about.html"
+                    class="block px-3 py-3 text-gray-600 hover:text-sl-clay hover:bg-slate-50 transition-colors uppercase tracking-wider">About</a>
+                <a href="contact.html"
+                    class="block px-3 py-3 text-gray-600 hover:text-sl-clay hover:bg-slate-50 transition-colors uppercase tracking-wider">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 lg:pt-40 lg:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            
+            <div class="lg:w-1/2 mt-10 lg:mt-0 fade-up">
+                <span class="text-sl-clay uppercase tracking-widest text-sm font-semibold mb-3 block">Ayubowan • Welcome</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-sl-dark leading-tight mb-6">
+                    A Taste of <br>Authentic Elegance.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+                    Clean, professional, and deeply rooted in Sri Lankan heritage. We bake with premium local spices, pure Kithul, and uncompromising quality.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="menu.html"
+                        class="btn-primary bg-sl-dark text-white px-8 py-3.5 rounded font-medium uppercase tracking-wider hover:bg-sl-clay transition-colors">
+                        View Offerings
+                    </a>
+                    <a href="about.html"
+                        class="px-8 py-3.5 rounded font-medium uppercase tracking-wider border border-sl-border text-sl-dark hover:border-sl-clay hover:text-sl-clay transition-colors">
+                        Our Roots
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 w-full fade-up" style="transition-delay: 150ms;">
+                <div class="img-container rounded shadow-lg overflow-hidden h-[60vh] lg:h-[70vh]">
+                    <img src="assets/images/hero_cake_1775802995305.png" alt="Signature Bake" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Section -->
+    <section class="py-24 bg-white border-y border-sl-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-sl-green uppercase tracking-widest text-xs font-semibold mb-2 block">Our Expertise</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-sl-dark mb-4">Curated Selections</h2>
+                <div class="h-px w-24 bg-sl-clay mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <a href="menu.html#wedding" class="group block img-container rounded overflow-hidden fade-up border border-sl-border bg-sl-earth">
+                    <div class="h-64 overflow-hidden">
+                        <img src="assets/images/wedding_cake_new_1775804389007.png" alt="Wedding Cakes" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-white text-center">
+                        <h3 class="text-xl font-serif text-sl-dark mb-1 group-hover:text-sl-clay transition-colors">Wedding & Events</h3>
+                        <p class="text-gray-500 text-sm">Professional craftsmanship</p>
+                    </div>
+                </a>
+
+                <!-- Category 2 -->
+                <a href="menu.html#classic" class="group block img-container rounded overflow-hidden fade-up border border-sl-border bg-sl-earth" style="transition-delay: 100ms;">
+                    <div class="h-64 overflow-hidden">
+                        <img src="assets/images/love_cake_1775804298710.png" alt="Local Classics" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-white text-center">
+                        <h3 class="text-xl font-serif text-sl-dark mb-1 group-hover:text-sl-clay transition-colors">Sri Lankan Classics</h3>
+                        <p class="text-gray-500 text-sm">Rich heritage recipes</p>
+                    </div>
+                </a>
+
+                <!-- Category 3 -->
+                <a href="menu.html#breakfast" class="group block img-container rounded overflow-hidden fade-up border border-sl-border bg-sl-earth" style="transition-delay: 200ms;">
+                    <div class="h-64 overflow-hidden">
+                        <img src="assets/images/pancakes_1775804334619.png" alt="Breakfast" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 bg-white text-center">
+                        <h3 class="text-xl font-serif text-sl-dark mb-1 group-hover:text-sl-clay transition-colors">Morning Bakes</h3>
+                        <p class="text-gray-500 text-sm">Fresh and energizing</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Approach -->
+    <section class="py-24 bg-sl-earth">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 grid grid-cols-2 gap-4 fade-up">
+                    <img src="assets/images/butter_cake_1775804269391.png" alt="Detail" class="rounded shadow-sm object-cover h-64 w-full">
+                    <img src="assets/images/date_cake_1775804284292.png" alt="Detail" class="rounded shadow-sm object-cover h-64 w-full mt-8">
+                </div>
+                <div class="lg:w-1/2 lg:pl-10 fade-up" style="transition-delay: 150ms;">
+                    <h2 class="text-3xl lg:text-4xl font-serif text-sl-dark mb-6">Quality in Simplicity.</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        At Bakes By Blunch, we believe that less is more. We strip away the artificial and the overly complicated, returning to the roots of true baking.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        By integrating pure Ceylon cinnamon, ethically sourced local cocoa, and unrefined sweeteners, we deliver a clean, professional product suitable for both corporate events and quiet family gatherings.
+                    </p>
+                    <a href="about.html" class="inline-flex items-center text-sl-clay hover:text-sl-dark uppercase tracking-wider font-semibold group transition-colors text-sm">
+                        Read Our Philosophy
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sl-dark pt-16 pb-8 border-t-[6px] border-sl-clay">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <div class="col-span-1 md:col-span-1 fade-up">
+                    <h3 class="font-serif text-2xl text-white tracking-widest uppercase mb-4">BBB</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Clean, professional, and authentically Sri Lankan artisanal bakery.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-sl-clay transition-colors"><i data-feather="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-sl-clay transition-colors"><i data-feather="facebook" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-span-1 fade-up" style="transition-delay: 100ms;">
+                    <h4 class="text-white font-medium tracking-wide mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="menu.html" class="text-gray-400 hover:text-white transition-colors">Menu</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Story</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 fade-up" style="transition-delay: 200ms;">
+                    <h4 class="text-white font-medium tracking-wide mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2 mt-0.5 text-sl-clay shrink-0"></i>
+                            No.370, Pichchamalawatta road, Gurudeniya, Kandy
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="w-4 h-4 mr-2 text-sl-clay"></i>
+                            +94766642491
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="w-4 h-4 mr-2 text-sl-clay"></i>
+                            Kavindradpitawlagae@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 fade-up" style="transition-delay: 300ms;">
+                    <h4 class="text-white font-medium tracking-wide mb-4">Newsletter</h4>
+                    <form class="flex flex-col gap-2">
+                        <input type="email" placeholder="Your Email"
+                            class="bg-[#3a3026] border border-[#3a3026] text-white px-3 py-2 text-sm rounded focus:outline-none focus:border-sl-clay transition-colors">
+                        <button type="button"
+                            class="bg-sl-clay text-white px-3 py-2 rounded font-medium text-sm hover:bg-white hover:text-sl-dark transition-colors">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-[#3a3026] pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 uppercase tracking-wider">
+                <p>&copy; 2026 Bakes By Blunch. All rights reserved.</p>
+                <div class="space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
